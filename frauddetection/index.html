@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberVigil</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="CyberVigil Logo">
+      <h1>CyberVigil</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="how-it-works.html">How it Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="content">
+      <h1>CyberVigil: Your Cyber Guardian</h1>
+      <p>Protecting Your Digital Life</p>
+      <a href="learn-more.html" class="learn-more">Learn More</a>
+    </div>
+    <div class="login-signup">
+      <div class="login">
+        <h2>Login your account</h2>
+        <form id="login-form" action="dashboard.html" method="POST">
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <a href="forgot-password.html">Forgot Password?</a>
+          <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+          <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="features" class="features">
+    <div class="feature-box">
+      <img src="game.jpg" alt="Gamified Challenges">
+      <h2>Gamified Challenges</h2>
+      <p>Educate users about cybersecurity threats and prevention techniques through interactive and engaging challenges.</p>
+    </div>
+    <div class="feature-box">
+      <img src="alert.png" alt="Real-Time Alerts">
+      <h2>Real-Time Alerts</h2>
+      <p>Provide immediate alerts and notifications to inform users of suspicious activities and potential cyber threats.</p>
+    </div>
+    <div class="feature-box">
+      <img src="predictive.png" alt="Predictive Analytics">
+      <h2>Predictive Analytics</h2>
+      <p>Utilize graphs and machine learning algorithms to analyze historical data, predict frequent cyber threats, and enable proactive prevention measures.</p>
+    </div>
+    <div class="feature-box">
+      <img src="chatbot.jpg" alt="Built-In Chatbot">
+      <h2>Built-In Chatbot</h2>
+      <p>Offer users real-time assistance and guidance on cybersecurity issues, helping them respond effectively to potential threats.</p>
+    </div>
+  </section>
+  <div id="chatbot">
+    <div class="chat-header">Chatbot</div>
+    <div class="chat-body">
+      <div class="message bot-message">Welcome! Your everyday AI companion.</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+  <button id="chatbot-button">Chat with us</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
+
